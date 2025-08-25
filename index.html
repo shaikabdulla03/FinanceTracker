@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Finance Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- ✅ Chart.js CDN for charts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>💰 Personal Finance Tracker (Mr.Abdulla)</h1>
+
+    <!-- ✅ Balance Summary Section -->
+    <div class="summary">
+      <div class="card">
+        <h3>Income</h3>
+        <p id="income">₹0</p>
+      </div>
+      <div class="card">
+        <h3>Expenses</h3>
+        <p id="expenses">₹0</p>
+      </div>
+      <div class="card balance">
+        <h3>Balance</h3>
+        <p id="balance">₹0</p>
+      </div>
+    </div>
+
+    <!-- ✅ Add Transaction Form -->
+    <div class="transaction-form">
+      <h2>Add Transaction</h2>
+      <input type="text" id="desc" placeholder="Description" required />
+      <input type="number" id="amount" placeholder="Amount" required />
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <input type="date" id="date" />
+      <button onclick="addTransaction()">Add</button>
+    </div>
+
+    <!-- ✅ Transaction List -->
+    <h2>Transactions</h2>
+    <ul id="transactions"></ul>
+
+    <!-- ✅ Charts Section -->
+    <div class="charts">
+      <canvas id="expenseChart"></canvas>
+      <canvas id="trendChart"></canvas>
+    </div>
+  </div>
+
+  <!-- ✅ JavaScript File -->
+  <script src="index.js"></script>
+</body>
+</html>
