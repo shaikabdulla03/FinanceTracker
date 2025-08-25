@@ -24,6 +24,11 @@ HTML5 → Structure
 CSS3 → Styling & responsiveness
 
 JavaScript (ES6) → Core logic & interactivity
+
+Chart.js → Beautiful, interactive charts
+
+LocalStorage API → Save and load data offline
+
 🔮 Future Enhancements
 
 🌙 Dark Mode toggle
@@ -36,6 +41,3 @@ JavaScript (ES6) → Core logic & interactivity
 
 Made with ❤️ by Shaik Abdulla
 
-Chart.js → Beautiful, interactive charts
-
-LocalStorage API → Save and load data offline
